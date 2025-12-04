@@ -1,0 +1,11 @@
+// .vscode/settings.json
+{
+"files.exclude": {
+"**/.docker": true,
+"**/.devcontainer": true,
+"**/.interface.sh": true,
+"**/.vscode": true,
+"**/.gitignore": true
+},
+"cmake.sourceDirectory": "/work/librepo"
+}
