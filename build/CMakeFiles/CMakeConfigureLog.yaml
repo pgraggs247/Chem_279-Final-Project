@@ -1,0 +1,1587 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.10.14-linuxkit - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a6ff4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a6ff4.dir/build.make CMakeFiles/cmTC_a6ff4.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS'
+        Building CXX object CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/15/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a6ff4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccQ1UELD.s
+        GNU C++17 (Ubuntu 15.2.0-4ubuntu4) version 15.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/15"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/15
+         /usr/include/aarch64-linux-gnu/c++/15
+         /usr/include/c++/15/backward
+         /usr/lib/gcc/aarch64-linux-gnu/15/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 091fe14dc6f3f0030f2e5c8e18699f51
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/'
+         /usr/bin/aarch64-linux-gnu-as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQ1UELD.s
+        GNU assembler version 2.45 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.45
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a6ff4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6ff4.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a6ff4' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a6ff4.'
+         /usr/libexec/gcc/aarch64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfR8hm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_a6ff4 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 15.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfR8hm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_a6ff4 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.45
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a6ff4' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a6ff4.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a6ff4
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/15]
+          add: [/usr/include/aarch64-linux-gnu/c++/15]
+          add: [/usr/include/c++/15/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/15] ==> [/usr/include/aarch64-linux-gnu/c++/15]
+        collapse include dir [/usr/include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/15/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/aarch64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/gcc/aarch64-linux-gnu/15/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a6ff4/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a6ff4.dir/build.make CMakeFiles/cmTC_a6ff4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-UlXhVS']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/15/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a6ff4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccQ1UELD.s]
+        ignore line: [GNU C++17 (Ubuntu 15.2.0-4ubuntu4) version 15.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/15"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/15]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/15]
+        ignore line: [ /usr/include/c++/15/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 091fe14dc6f3f0030f2e5c8e18699f51]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/']
+        ignore line: [ /usr/bin/aarch64-linux-gnu-as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQ1UELD.s]
+        ignore line: [GNU assembler version 2.45 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.45]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a6ff4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6ff4.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a6ff4' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_a6ff4.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfR8hm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_a6ff4 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccWfR8hm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a6ff4] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 15.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWfR8hm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_a6ff4 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a6ff4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15] ==> [/usr/lib/gcc/aarch64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/15;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.45
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-lsYx1R"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-lsYx1R"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-lsYx1R'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24a05/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_24a05.dir/build.make CMakeFiles/cmTC_24a05.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-lsYx1R'
+        Building CXX object CMakeFiles/cmTC_24a05.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_24a05.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_24a05.dir/build.make:81: CMakeFiles/cmTC_24a05.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-lsYx1R'
+        gmake: *** [Makefile:134: cmTC_24a05/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-cPQh1P"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-cPQh1P"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-cPQh1P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_939ca/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_939ca.dir/build.make CMakeFiles/cmTC_939ca.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-cPQh1P'
+        Building CXX object CMakeFiles/cmTC_939ca.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_939ca.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_939ca.dir/build.make:81: CMakeFiles/cmTC_939ca.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-cPQh1P'
+        gmake: *** [Makefile:134: cmTC_939ca/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindBLAS.cmake:379 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindBLAS.cmake:423 (check_blas_libraries)"
+      - "CMakeLists.txt:17 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e82a8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e82a8.dir/build.make CMakeFiles/cmTC_e82a8.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23'
+        Building CXX object CMakeFiles/cmTC_e82a8.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=sgemm_ -std=gnu++20 -o CMakeFiles/cmTC_e82a8.dir/CheckFunctionExists.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_e82a8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e82a8.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_e82a8.dir/CheckFunctionExists.cxx.o: in function `main':
+        CheckFunctionExists.cxx:(.text+0x10): undefined reference to `sgemm_'
+        collect2: error: ld returned 1 exit status
+        /usr/bin/c++  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_e82a8.dir/CheckFunctionExists.cxx.o -o cmTC_e82a8
+        gmake[1]: *** [CMakeFiles/cmTC_e82a8.dir/build.make:102: cmTC_e82a8] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-TARV23'
+        gmake: *** [Makefile:134: cmTC_e82a8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.31/Modules/FindBLAS.cmake:477 (find_package)"
+      - "CMakeLists.txt:17 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5350c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5350c.dir/build.make CMakeFiles/cmTC_5350c.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1'
+        Building CXX object CMakeFiles/cmTC_5350c.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_5350c.dir/src.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1/src.cxx
+        Linking CXX executable cmTC_5350c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5350c.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5350c.dir/src.cxx.o -o cmTC_5350c
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-WPURa1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindBLAS.cmake:379 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindBLAS.cmake:764 (check_blas_libraries)"
+      - "CMakeLists.txt:17 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "BLAS_openblas_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4fc08/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4fc08.dir/build.make CMakeFiles/cmTC_4fc08.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku'
+        Building CXX object CMakeFiles/cmTC_4fc08.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=sgemm_ -std=gnu++20 -o CMakeFiles/cmTC_4fc08.dir/CheckFunctionExists.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_4fc08
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fc08.dir/link.txt --verbose=1
+        /usr/bin/c++  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_4fc08.dir/CheckFunctionExists.cxx.o -o cmTC_4fc08  /usr/lib/aarch64-linux-gnu/libopenblas.so
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-582vku'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindLAPACK.cmake:399 (check_lapack_libraries)"
+      - "CMakeLists.txt:18 (find_package)"
+    checks:
+      - "Looking for cheev_"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c595d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c595d.dir/build.make CMakeFiles/cmTC_c595d.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW'
+        Building CXX object CMakeFiles/cmTC_c595d.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=cheev_ -std=gnu++20 -o CMakeFiles/cmTC_c595d.dir/CheckFunctionExists.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_c595d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c595d.dir/link.txt --verbose=1
+        /usr/bin/c++  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_c595d.dir/CheckFunctionExists.cxx.o -o cmTC_c595d  /usr/lib/aarch64-linux-gnu/libopenblas.so -lm -ldl
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-eY8CIW'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-M5iJtH"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-M5iJtH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-M5iJtH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fad53/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fad53.dir/build.make CMakeFiles/cmTC_fad53.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-M5iJtH'
+        Building CXX object CMakeFiles/cmTC_fad53.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_fad53.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_fad53.dir/build.make:81: CMakeFiles/cmTC_fad53.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-M5iJtH'
+        gmake: *** [Makefile:134: cmTC_fad53/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tdk7Me"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tdk7Me"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tdk7Me'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a082/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4a082.dir/build.make CMakeFiles/cmTC_4a082.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tdk7Me'
+        Building CXX object CMakeFiles/cmTC_4a082.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_4a082.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_4a082.dir/build.make:81: CMakeFiles/cmTC_4a082.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tdk7Me'
+        gmake: *** [Makefile:134: cmTC_4a082/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U4E5L1"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U4E5L1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U4E5L1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3554/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c3554.dir/build.make CMakeFiles/cmTC_c3554.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U4E5L1'
+        Building CXX object CMakeFiles/cmTC_c3554.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_c3554.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c3554.dir/build.make:81: CMakeFiles/cmTC_c3554.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U4E5L1'
+        gmake: *** [Makefile:134: cmTC_c3554/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-QQiJoh"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-QQiJoh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-QQiJoh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bae05/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bae05.dir/build.make CMakeFiles/cmTC_bae05.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-QQiJoh'
+        Building CXX object CMakeFiles/cmTC_bae05.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_bae05.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_bae05.dir/build.make:81: CMakeFiles/cmTC_bae05.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-QQiJoh'
+        gmake: *** [Makefile:134: cmTC_bae05/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U6zP5L"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U6zP5L"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U6zP5L'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7088f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7088f.dir/build.make CMakeFiles/cmTC_7088f.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U6zP5L'
+        Building CXX object CMakeFiles/cmTC_7088f.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_7088f.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_7088f.dir/build.make:81: CMakeFiles/cmTC_7088f.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-U6zP5L'
+        gmake: *** [Makefile:134: cmTC_7088f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-owOfhY"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-owOfhY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-owOfhY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60767/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_60767.dir/build.make CMakeFiles/cmTC_60767.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-owOfhY'
+        Building CXX object CMakeFiles/cmTC_60767.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_60767.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_60767.dir/build.make:81: CMakeFiles/cmTC_60767.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-owOfhY'
+        gmake: *** [Makefile:134: cmTC_60767/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-crUgwA"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-crUgwA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-crUgwA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8b212/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8b212.dir/build.make CMakeFiles/cmTC_8b212.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-crUgwA'
+        Building CXX object CMakeFiles/cmTC_8b212.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_8b212.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_8b212.dir/build.make:81: CMakeFiles/cmTC_8b212.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-crUgwA'
+        gmake: *** [Makefile:134: cmTC_8b212/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-4JUrQa"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-4JUrQa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-4JUrQa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae234/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae234.dir/build.make CMakeFiles/cmTC_ae234.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-4JUrQa'
+        Building CXX object CMakeFiles/cmTC_ae234.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_ae234.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_ae234.dir/build.make:81: CMakeFiles/cmTC_ae234.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-4JUrQa'
+        gmake: *** [Makefile:134: cmTC_ae234/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-2Uo0Xr"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-2Uo0Xr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-2Uo0Xr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5372c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5372c.dir/build.make CMakeFiles/cmTC_5372c.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-2Uo0Xr'
+        Building CXX object CMakeFiles/cmTC_5372c.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_5372c.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_5372c.dir/build.make:81: CMakeFiles/cmTC_5372c.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-2Uo0Xr'
+        gmake: *** [Makefile:134: cmTC_5372c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-turxFL"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-turxFL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-turxFL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f6ba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6f6ba.dir/build.make CMakeFiles/cmTC_6f6ba.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-turxFL'
+        Building CXX object CMakeFiles/cmTC_6f6ba.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_6f6ba.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_6f6ba.dir/build.make:81: CMakeFiles/cmTC_6f6ba.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-turxFL'
+        gmake: *** [Makefile:134: cmTC_6f6ba/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Ce8MKI"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Ce8MKI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Ce8MKI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4990/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f4990.dir/build.make CMakeFiles/cmTC_f4990.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Ce8MKI'
+        Building CXX object CMakeFiles/cmTC_f4990.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_f4990.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_f4990.dir/build.make:81: CMakeFiles/cmTC_f4990.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Ce8MKI'
+        gmake: *** [Makefile:134: cmTC_f4990/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-KiNBgR"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-KiNBgR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-KiNBgR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d70c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0d70c.dir/build.make CMakeFiles/cmTC_0d70c.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-KiNBgR'
+        Building CXX object CMakeFiles/cmTC_0d70c.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_0d70c.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_0d70c.dir/build.make:81: CMakeFiles/cmTC_0d70c.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-KiNBgR'
+        gmake: *** [Makefile:134: cmTC_0d70c/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-mT4MV9"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-mT4MV9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-mT4MV9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c2042/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c2042.dir/build.make CMakeFiles/cmTC_c2042.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-mT4MV9'
+        Building CXX object CMakeFiles/cmTC_c2042.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_c2042.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c2042.dir/build.make:81: CMakeFiles/cmTC_c2042.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-mT4MV9'
+        gmake: *** [Makefile:134: cmTC_c2042/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-wtUecU"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-wtUecU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-wtUecU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d90d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5d90d.dir/build.make CMakeFiles/cmTC_5d90d.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-wtUecU'
+        Building CXX object CMakeFiles/cmTC_5d90d.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_5d90d.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_5d90d.dir/build.make:81: CMakeFiles/cmTC_5d90d.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-wtUecU'
+        gmake: *** [Makefile:134: cmTC_5d90d/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-ECUDxE"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-ECUDxE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-ECUDxE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_46d39/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_46d39.dir/build.make CMakeFiles/cmTC_46d39.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-ECUDxE'
+        Building CXX object CMakeFiles/cmTC_46d39.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_46d39.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_46d39.dir/build.make:81: CMakeFiles/cmTC_46d39.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-ECUDxE'
+        gmake: *** [Makefile:134: cmTC_46d39/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-bhxsBe"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-bhxsBe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-bhxsBe'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e9e82/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e9e82.dir/build.make CMakeFiles/cmTC_e9e82.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-bhxsBe'
+        Building CXX object CMakeFiles/cmTC_e9e82.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_e9e82.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_e9e82.dir/build.make:81: CMakeFiles/cmTC_e9e82.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-bhxsBe'
+        gmake: *** [Makefile:134: cmTC_e9e82/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-EWLgxq"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-EWLgxq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-EWLgxq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ec55/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1ec55.dir/build.make CMakeFiles/cmTC_1ec55.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-EWLgxq'
+        Building CXX object CMakeFiles/cmTC_1ec55.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_1ec55.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_1ec55.dir/build.make:81: CMakeFiles/cmTC_1ec55.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-EWLgxq'
+        gmake: *** [Makefile:134: cmTC_1ec55/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-L2aHNQ"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-L2aHNQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-L2aHNQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0035a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0035a.dir/build.make CMakeFiles/cmTC_0035a.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-L2aHNQ'
+        Building CXX object CMakeFiles/cmTC_0035a.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_0035a.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_0035a.dir/build.make:81: CMakeFiles/cmTC_0035a.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-L2aHNQ'
+        gmake: *** [Makefile:134: cmTC_0035a/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-w0tg4y"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-w0tg4y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-w0tg4y'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8985/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8985.dir/build.make CMakeFiles/cmTC_b8985.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-w0tg4y'
+        Building CXX object CMakeFiles/cmTC_b8985.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_b8985.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_b8985.dir/build.make:81: CMakeFiles/cmTC_b8985.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-w0tg4y'
+        gmake: *** [Makefile:134: cmTC_b8985/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-idgbSL"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-idgbSL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-idgbSL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ecc90/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ecc90.dir/build.make CMakeFiles/cmTC_ecc90.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-idgbSL'
+        Building CXX object CMakeFiles/cmTC_ecc90.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_ecc90.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_ecc90.dir/build.make:81: CMakeFiles/cmTC_ecc90.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-idgbSL'
+        gmake: *** [Makefile:134: cmTC_ecc90/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-JxFqNu"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-JxFqNu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-JxFqNu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_750ba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_750ba.dir/build.make CMakeFiles/cmTC_750ba.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-JxFqNu'
+        Building CXX object CMakeFiles/cmTC_750ba.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_750ba.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_750ba.dir/build.make:81: CMakeFiles/cmTC_750ba.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-JxFqNu'
+        gmake: *** [Makefile:134: cmTC_750ba/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-fYsPbM"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-fYsPbM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-fYsPbM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_65ddc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_65ddc.dir/build.make CMakeFiles/cmTC_65ddc.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-fYsPbM'
+        Building CXX object CMakeFiles/cmTC_65ddc.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_65ddc.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_65ddc.dir/build.make:81: CMakeFiles/cmTC_65ddc.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-fYsPbM'
+        gmake: *** [Makefile:134: cmTC_65ddc/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-hOoyiK"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-hOoyiK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-hOoyiK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c48ab/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c48ab.dir/build.make CMakeFiles/cmTC_c48ab.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-hOoyiK'
+        Building CXX object CMakeFiles/cmTC_c48ab.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_c48ab.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c48ab.dir/build.make:81: CMakeFiles/cmTC_c48ab.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-hOoyiK'
+        gmake: *** [Makefile:134: cmTC_c48ab/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-iiLwAG"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-iiLwAG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-iiLwAG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0189/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0189.dir/build.make CMakeFiles/cmTC_b0189.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-iiLwAG'
+        Building CXX object CMakeFiles/cmTC_b0189.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_b0189.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_b0189.dir/build.make:81: CMakeFiles/cmTC_b0189.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-iiLwAG'
+        gmake: *** [Makefile:134: cmTC_b0189/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dIuT0o"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dIuT0o"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dIuT0o'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2886/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b2886.dir/build.make CMakeFiles/cmTC_b2886.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dIuT0o'
+        Building CXX object CMakeFiles/cmTC_b2886.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_b2886.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_b2886.dir/build.make:81: CMakeFiles/cmTC_b2886.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dIuT0o'
+        gmake: *** [Makefile:134: cmTC_b2886/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-SeEnqF"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-SeEnqF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-SeEnqF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4be49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4be49.dir/build.make CMakeFiles/cmTC_4be49.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-SeEnqF'
+        Building CXX object CMakeFiles/cmTC_4be49.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_4be49.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_4be49.dir/build.make:81: CMakeFiles/cmTC_4be49.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-SeEnqF'
+        gmake: *** [Makefile:134: cmTC_4be49/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tNeEty"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tNeEty"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tNeEty'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f9f5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2f9f5.dir/build.make CMakeFiles/cmTC_2f9f5.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tNeEty'
+        Building CXX object CMakeFiles/cmTC_2f9f5.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_2f9f5.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_2f9f5.dir/build.make:81: CMakeFiles/cmTC_2f9f5.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-tNeEty'
+        gmake: *** [Makefile:134: cmTC_2f9f5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-uwiAgk"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-uwiAgk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-uwiAgk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bfe61/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bfe61.dir/build.make CMakeFiles/cmTC_bfe61.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-uwiAgk'
+        Building CXX object CMakeFiles/cmTC_bfe61.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_bfe61.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_bfe61.dir/build.make:81: CMakeFiles/cmTC_bfe61.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-uwiAgk'
+        gmake: *** [Makefile:134: cmTC_bfe61/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "CMakeLists.txt:13 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dUza7g"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dUza7g"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dUza7g'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_51c12/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_51c12.dir/build.make CMakeFiles/cmTC_51c12.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dUza7g'
+        Building CXX object CMakeFiles/cmTC_51c12.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_51c12.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_51c12.dir/build.make:81: CMakeFiles/cmTC_51c12.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-dUza7g'
+        gmake: *** [Makefile:134: cmTC_51c12/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:241 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindHDF5.cmake:611 (_HDF5_test_regular_compiler_C)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/HighFive/HighFiveConfig.cmake:8 (find_dependency)"
+      - "CMakeLists.txt:14 (find_package)"
+    directories:
+      source: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Bdxw5a"
+      binary: "/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Bdxw5a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Bdxw5a'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5fd4e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5fd4e.dir/build.make CMakeFiles/cmTC_5fd4e.dir/build
+        gmake[1]: Entering directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Bdxw5a'
+        Building CXX object CMakeFiles/cmTC_5fd4e.dir/cmake_hdf5_test.cxx.o
+        /usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_5fd4e.dir/cmake_hdf5_test.cxx.o -c /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx
+        /workspaces/Chem_279-Final-Project/build/CMakeFiles/hdf5/cmake_hdf5_test.cxx:1:10: fatal error: hdf5.h: No such file or directory
+            1 | #include <hdf5.h>
+              |          ^~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_5fd4e.dir/build.make:81: CMakeFiles/cmTC_5fd4e.dir/cmake_hdf5_test.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/Chem_279-Final-Project/build/CMakeFiles/CMakeScratch/TryCompile-Bdxw5a'
+        gmake: *** [Makefile:134: cmTC_5fd4e/fast] Error 2
+        
+      exitCode: 2
+...

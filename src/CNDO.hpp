@@ -1,6 +1,6 @@
 #pragma once 
 
-#include "new_molecule_fixed.hpp"
+#include "new_molecule.hpp"
 #include "3D_gaussian.hpp"
 #include <iostream>
 #include <armadillo>
@@ -35,7 +35,9 @@ class CNDO{
         num_basis = molecule.num_basis_funcs;
     }
         
-    
+        // Getters to retrieve molecule references
+        NewMolecule& get_molecule() { return molecule; }
+        const NewMolecule& get_molecule() const { return molecule; }
 
         double get_Suv_Ra(int u, int v, int atom_idx, int derivative_component){
             double result{0.0};
@@ -280,7 +282,7 @@ class CNDO{
             }
         }
 
-        result.print("The Overlap Integrals (Printed In Accord With Rubric)");
+        // result.print("The Overlap Integrals (Printed In Accord With Rubric)");
 
         return result;
 
@@ -509,7 +511,7 @@ class CNDO{
                     }
                 }
             }
-            grad.print("Nuclear Repulsion Energy (Printed In Accordance With Rubric)");
+            // grad.print("Nuclear Repulsion Energy (Printed In Accordance With Rubric)");
             return grad;
         }
 
@@ -683,7 +685,7 @@ class CNDO{
                 }
             }
             
-            result.print("Two-Electron Integrals (Printed In Accordance With Rubric)");
+            // result.print("Two-Electron Integrals (Printed In Accordance With Rubric)");
             return result;
         }
 
@@ -698,7 +700,7 @@ class CNDO{
                 res(2, A) = get_E_component(A, 2); 
             }
 
-            res.print("Total Gradient (Printed In Accordance With Rubric)");
+            // res.print("Total Gradient (Printed In Accordance With Rubric)");
             return res;
         }
 
@@ -765,7 +767,7 @@ class CNDO{
 
 
         // This function I will write. I'll copy it as much as possible directly from the HW_1_4 implementation
-        void geometry_optimization(NewMolecule &molecule){
+        void geometry_optimization(){
 
             double threshold = 0.00001;
             double initial_step = 0.5;
@@ -789,8 +791,8 @@ class CNDO{
             int max_iters = 100;
             for(int iter=0; iter < max_iters; iter++){
 
-                CNDO cndo(molecule);
-                arma::mat forces = cndo.compute_gradient();
+                
+                arma::mat forces = compute_gradient();
                 double force_magnitude  = arma::norm(forces);
                 arma::mat direction = -forces.t() / force_magnitude;
 

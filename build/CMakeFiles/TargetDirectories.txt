@@ -1,0 +1,3 @@
+/workspaces/Chem_279-Final-Project/build/CMakeFiles/normal_mode.dir
+/workspaces/Chem_279-Final-Project/build/CMakeFiles/edit_cache.dir
+/workspaces/Chem_279-Final-Project/build/CMakeFiles/rebuild_cache.dir

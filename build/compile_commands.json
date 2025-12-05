@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/workspaces/Chem_279-Final-Project/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_mode.dir/src/main.cpp.o -c /workspaces/Chem_279-Final-Project/src/main.cpp",
+  "file": "/workspaces/Chem_279-Final-Project/src/main.cpp",
+  "output": "CMakeFiles/normal_mode.dir/src/main.cpp.o"
+},
+{
+  "directory": "/workspaces/Chem_279-Final-Project/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_mode.dir/src/3D_gaussian.cpp.o -c /workspaces/Chem_279-Final-Project/src/3D_gaussian.cpp",
+  "file": "/workspaces/Chem_279-Final-Project/src/3D_gaussian.cpp",
+  "output": "CMakeFiles/normal_mode.dir/src/3D_gaussian.cpp.o"
+},
+{
+  "directory": "/workspaces/Chem_279-Final-Project/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_mode.dir/src/normal_modes.cpp.o -c /workspaces/Chem_279-Final-Project/src/normal_modes.cpp",
+  "file": "/workspaces/Chem_279-Final-Project/src/normal_modes.cpp",
+  "output": "CMakeFiles/normal_mode.dir/src/normal_modes.cpp.o"
+}
+]

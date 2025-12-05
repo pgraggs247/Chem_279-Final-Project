@@ -38,3 +38,4 @@ add_compile_options(-Wa,--gsframe=no) # This is to suppress a useless warning on
 link_libraries(common)
 
 # If Needed Make Modifications below this line 
+add_executable(normal_mode src/main.cpp src/3D_gaussian.cpp src/normal_modes.cpp)

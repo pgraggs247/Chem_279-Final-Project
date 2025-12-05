@@ -1622,10 +1622,10 @@ class NewMolecule{
 
 
             // We want to display the output in a similar manner to the solution so we can easily compare and debug
-            cout << "Num Alpha Electrons: " << num_alpha_e << endl;
-            cout << "Num Beta Electrons: " << num_beta_e << endl;
-            gamma_mat.print("Gamma Matrix");
-            overlap_matrix.print("Overlap Matrix");
+            // cout << "Num Alpha Electrons: " << num_alpha_e << endl;
+            // cout << "Num Beta Electrons: " << num_beta_e << endl;
+            // gamma_mat.print("Gamma Matrix");
+            // overlap_matrix.print("Overlap Matrix");
             arma::mat H_core = build_H_core();
             H_core.print("H_core");
 
@@ -1658,12 +1658,12 @@ class NewMolecule{
                 Fb.print("Fb ");
                 cout << "After solving Eigen Equation: " << iter << endl;
                 cout << "P = " << num_alpha_e << " Q = " << num_beta_e << endl;
-                coeff_matrix_alpha.print("Ca ");
-                coeff_matrix_beta.print("Cb ");
+                // coeff_matrix_alpha.print("Ca ");
+                // coeff_matrix_beta.print("Cb ");
                 
-                P_alpha_new.print("P_alpha_new");
-                P_beta_new.print("P_beta_new");
-                P_total_new.print("P_total_new");
+                // P_alpha_new.print("P_alpha_new");
+                // P_beta_new.print("P_beta_new");
+                // P_total_new.print("P_total_new");
 
 
                 if (delta < threshold){
@@ -1700,22 +1700,22 @@ class NewMolecule{
 
             // Printing The Converged Eigenvectors For Alpha and Beta Number of Electrons
             cout << endl;
-            final_eigenvecs_alpha.print("Final Eigenvectors For Alpha Number of Electrons: ");
+            // final_eigenvecs_alpha.print("Final Eigenvectors For Alpha Number of Electrons: ");
             cout << endl;
-            final_eigenvecs_beta.print("Final Eigenvectors For Beta Number of Electrons: ");
+            // final_eigenvecs_beta.print("Final Eigenvectors For Beta Number of Electrons: ");
 
             // Printing The Converged Eigenvalus For Alpha and Beta Number of Electrons
-            final_eigenvals_alpha.print("Final Ea: ");
+            // final_eigenvals_alpha.print("Final Ea: ");
             cout << endl;
-            final_eigenvals_beta.print("Final Eb: ");
+            // final_eigenvals_beta.print("Final Eb: ");
             cout << endl;
 
 
             double Electronic_energy = get_electronic_energy();
-            cout << "Electronic Energy: " << Electronic_energy << endl;
+            // cout << "Electronic Energy: " << Electronic_energy << endl;
 
             double Nuclear_repulsion_energy = get_nuclear_repulsion_energy();
-            cout << "Nuclear Repulsion Energy: " << Nuclear_repulsion_energy << endl;
+            // cout << "Nuclear Repulsion Energy: " << Nuclear_repulsion_energy << endl;
 
             return std::make_pair(Electronic_energy, Nuclear_repulsion_energy);
         }
