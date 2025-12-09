@@ -765,6 +765,25 @@ class CNDO{
             return (a + c) / 2.0;
         }
 
+        // Convert 3 x N gradient matrix into a 3N-dimensional vector
+        arma::vec flatten_gradient(const arma::mat& gradient){
+
+    
+                int num_atoms = molecule.atoms_of_molecule.size();
+                arma::vec flattened_vec(3*num_atoms, arma::fill::zeros);
+
+                for(int A= 0; A < num_atoms; A++){
+                    for(int k = 0; k < 3; k++){
+                        int idx = 3 * A + k;
+                        flattened_vec.at(idx) = gradient(k, A);
+
+                    }
+                }
+
+            return flattened_vec;
+
+        }
+
 
         // This function I will write. I'll copy it as much as possible directly from the HW_1_4 implementation
         void geometry_optimization(){
@@ -791,15 +810,58 @@ class CNDO{
             int max_iters = 100;
             for(int iter=0; iter < max_iters; iter++){
 
-                
-                arma::mat forces = compute_gradient();
-                double force_magnitude  = arma::norm(forces);
-                arma::mat direction = -forces.t() / force_magnitude;
+                // ChatGPT suggest replacing these lines with the code below
+                // arma::mat forces = compute_gradient();
+                // double force_magnitude  = arma::norm(forces);
+                // arma::mat direction = -forces.t() / force_magnitude;
 
-                if(force_magnitude < threshold){
-                    std::cout << "Force Less Than Threshold. Energy Has COnverged." << std::endl;
-                    break;
-                }
+                // New lines
+                // arma::mat grad_mat = compute_gradient();
+                // arma::vec grad_vec = flatten_gradient(grad_mat);
+
+                // double force_magnitude = arma::norm(grad_vec);
+
+                // arma::vec direction = -grad_vec / force_magnitude;
+
+
+
+                // if(force_magnitude < threshold){
+                //     std::cout << "Force Less Than Threshold. Energy Has COnverged." << std::endl;
+                //     break;
+                // }
+
+
+                //More New Lines
+                // Old code:
+// arma::mat forces = compute_gradient();
+// double force_magnitude  = arma::norm(forces);
+// arma::mat direction = -forces.t() / force_magnitude;
+
+// New code with your naming:
+arma::mat grad_mat = compute_gradient();
+arma::vec grad_vec = flatten_gradient(grad_mat);
+
+// Norm of the 3N-dimensional gradient vector
+double grad_norm = arma::norm(grad_vec);
+
+// Check convergence based on grad_norm instead of force_magnitude
+if (grad_norm < threshold) {
+    std::cout << "Force Less Than Threshold. Energy Has Converged." << std::endl;
+    break;
+}
+
+// Steepest-descent direction in 3N space
+arma::vec direction_vec = -grad_vec / grad_norm;
+
+// Convert direction_vec (length 3N) back to an (N_atoms x 3) matrix
+arma::mat direction(org_positions.n_rows, 3, arma::fill::zeros);
+
+for (int atom = 0; atom < org_positions.n_rows; atom++) {
+    direction(atom, 0) = direction_vec(3 * atom    );
+    direction(atom, 1) = direction_vec(3 * atom + 1);
+    direction(atom, 2) = direction_vec(3 * atom + 2);
+}
+
 
                 bool within_bracket = false;
                 double a = 0.0; double b = initial_step; double c = b + 1.618 * (b - a);

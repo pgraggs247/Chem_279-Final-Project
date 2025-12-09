@@ -1627,7 +1627,7 @@ class NewMolecule{
             // gamma_mat.print("Gamma Matrix");
             // overlap_matrix.print("Overlap Matrix");
             arma::mat H_core = build_H_core();
-            H_core.print("H_core");
+            // H_core.print("H_core");
 
             arma::mat Fa;
             arma::mat Fb;
@@ -1653,11 +1653,11 @@ class NewMolecule{
                 double delta = std::max(delta_a, delta_b);      // Take the largest one. If this one has converged so has the other.
 
 
-                cout << "Iteration Number: " << iter << endl << endl;
-                Fa.print("Fa ");
-                Fb.print("Fb ");
-                cout << "After solving Eigen Equation: " << iter << endl;
-                cout << "P = " << num_alpha_e << " Q = " << num_beta_e << endl;
+                // cout << "Iteration Number: " << iter << endl << endl;
+                // Fa.print("Fa ");
+                // Fb.print("Fb ");
+                // cout << "After solving Eigen Equation: " << iter << endl;
+                // cout << "P = " << num_alpha_e << " Q = " << num_beta_e << endl;
                 // coeff_matrix_alpha.print("Ca ");
                 // coeff_matrix_beta.print("Cb ");
                 

@@ -26,6 +26,18 @@ private:
 
     std::unordered_map<int, double> atomic_masses;
 
+    std::string symbol_from_Z(int Z) const {
+    switch (Z) {
+        case 1: return "H";
+        case 6: return "C";
+        case 7: return "N";
+        case 8: return "O";
+        case 9: return "F";
+        default: return "X";
+    }
+}
+
+
 public:
     HessianBuilder(CNDO& C);
 
@@ -35,6 +47,16 @@ public:
 
     arma::mat mass_weight(const arma::mat& H);
 
-    void compute_vibrations(double h);
+    arma::mat compute_vibrations(double h);
+
+    arma::vec compute_frequencies(const arma::vec& eigvals);
+
+    void write_mode_xyz(const arma::mat& cart_modes,
+                    int mode_index,
+                    int n_frames,
+                    double amplitude,
+                    const std::string& base_filename);
+
+
 
 };
