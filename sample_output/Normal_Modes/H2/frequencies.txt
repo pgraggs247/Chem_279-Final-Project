@@ -1,0 +1,7 @@
+=== Corrected Frequencies ===
+Mode 1: 0 cm^-1
+Mode 2: 0 cm^-1
+Mode 3: 0 cm^-1
+Mode 4: 0 cm^-1
+Mode 5: 0 cm^-1
+Mode 6: 6126.04 cm^-1

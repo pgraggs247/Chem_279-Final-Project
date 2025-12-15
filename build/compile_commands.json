@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/normal_modes.cpp.o -c /work/src/normal_modes.cpp",
+  "file": "/work/src/normal_modes.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/normal_modes.cpp.o"
+},
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/hw3.cpp.o -c /work/src/hw3.cpp",
+  "file": "/work/src/hw3.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/hw3.cpp.o"
+},
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/hw4.cpp.o -c /work/src/hw4.cpp",
+  "file": "/work/src/hw4.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/hw4.cpp.o"
+},
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/hw5.cpp.o -c /work/src/hw5.cpp",
+  "file": "/work/src/hw5.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/hw5.cpp.o"
+},
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/analyzer.cpp.o -c /work/src/analyzer.cpp",
+  "file": "/work/src/analyzer.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/analyzer.cpp.o"
+},
+{
+  "directory": "/work/build",
+  "command": "/usr/bin/c++ -DARMA_USE_HDF5 -DH5_USE_110_API -I/work/include -isystem /usr/include/eigen3 -isystem /usr/include/hdf5/serial -g -std=gnu++20 -Wa,--gsframe=no -o CMakeFiles/normal_modes.dir/src/writter.cpp.o -c /work/src/writter.cpp",
+  "file": "/work/src/writter.cpp",
+  "output": "CMakeFiles/normal_modes.dir/src/writter.cpp.o"
+}
+]
