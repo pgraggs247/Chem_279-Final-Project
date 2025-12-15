@@ -1,0 +1,5 @@
+{
+    "atoms_file_path" : "atoms/HO.xyz",
+    "num_alpha_electrons" : 4, 
+    "num_beta_electrons" : 3
+}

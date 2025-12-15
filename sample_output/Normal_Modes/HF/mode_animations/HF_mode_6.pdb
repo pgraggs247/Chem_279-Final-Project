@@ -1,0 +1,81 @@
+MODEL        1
+HETATM    1 H    MOL A   1      -0.070   0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.790   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        2
+HETATM    1 H    MOL A   1      -0.220  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.824   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        3
+HETATM    1 H    MOL A   1      -0.356  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.856   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        4
+HETATM    1 H    MOL A   1      -0.464  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.880   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        5
+HETATM    1 H    MOL A   1      -0.533  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.896   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        6
+HETATM    1 H    MOL A   1      -0.557  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.902   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        7
+HETATM    1 H    MOL A   1      -0.533  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.896   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        8
+HETATM    1 H    MOL A   1      -0.464  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.880   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL        9
+HETATM    1 H    MOL A   1      -0.356  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.856   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL       10
+HETATM    1 H    MOL A   1      -0.220  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.824   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL       11
+HETATM    1 H    MOL A   1      -0.070  -0.000   0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.790   0.000   0.000  1.00  0.00           F
+ENDMDL
+MODEL       12
+HETATM    1 H    MOL A   1       0.081   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.755  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       13
+HETATM    1 H    MOL A   1       0.217   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.724  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       14
+HETATM    1 H    MOL A   1       0.325   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.699  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       15
+HETATM    1 H    MOL A   1       0.394   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.683  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       16
+HETATM    1 H    MOL A   1       0.418   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.677  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       17
+HETATM    1 H    MOL A   1       0.394   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.683  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       18
+HETATM    1 H    MOL A   1       0.325   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.699  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       19
+HETATM    1 H    MOL A   1       0.217   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.724  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+MODEL       20
+HETATM    1 H    MOL A   1       0.081   0.000  -0.000  1.00  0.00           H
+HETATM    2 F    MOL A   1       1.755  -0.000  -0.000  1.00  0.00           F
+ENDMDL
+END
