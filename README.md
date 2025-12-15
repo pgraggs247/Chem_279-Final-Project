@@ -45,27 +45,30 @@ Below is a directory tree to help navigate the codebase:
 ├── atoms/           # XYZ molecular geometry files  
 ├── basis/           # STO-3G basis set parameters (JSON)  
 ├── include/         # Header files  
-├── sample/input     # Configuration JSON files  
-├── sample/output    # Generated results  
+├── sample_input     # Configuration JSON files  
+├── sample_output    # Generated results  
 └── src/             # Source code
+
+In addition, the repo contains:
+1. CHEM-279-FINAL-PROJECT.pptx: The group's final project powerpoint presentation.
 ```
 
 ## Building & Running the Project
 
-1. A pre-configured development environment is available; launch the interactive Docker container: `./interactive.sh`.
+1. A pre-configured development environment is available; launch the interactive Docker container: `./interactive.sh`
 
-2. Inside the container, build the project: `./build.sh` (you might need to `chmod +x` to gain permission access). To remove the `build` subdirectory, run `./clean.sh`
+2. Inside the container, build the project: `./build.sh` (you might need to `chmod +x` to gain permission access). To remove the `build` subdirectory and output files to start fresh, run `./clean.sh`
 
-3. To run the program, in the root directory, type `./build/normal_modes <molecule_name>`. For example, to run Hydrogen (H₂): `./build/normal_modes H2`.
+3. To run the program, in the root directory, run `./run.sh <molecule_name>`. To execute all tested molecules at once, run `./run.sh`. 
 
-4. The program will run and output results saved to `sample_output/Normal_Modes/<molecule>/`:
+4. The program will output results saved to `sample_output/Normal_Modes/<molecule>/`:
 
     `- frequencies.txt`: list all vibrational frequencies in cm⁻¹. The first 5 modes (linear) or 6 modes (non-linear) correspond to translations and rotations, and should have frequencies near zero.
 
     `- mode_animations`: subfolder which contains PDB trajectories files containing 20 frames that animate each vibrational mode.
 
 ### Example Output
-Running `./build/normal_modes H2O` produces in the terminal:
+Running `./run.sh H2O` produces in the terminal:
 
 ```
 Initial Energy: -538.021 eV
@@ -123,4 +126,4 @@ frame 1
 mpng frame_, mode=2
 mplay
 ```
-`Note:` The animations for the test molecules were produced, and can be viewed in the slides presentation in this repo.
+`Note:` The animations for the test molecules were produced, and can be viewed in the final powerpoint presentation in this repo.

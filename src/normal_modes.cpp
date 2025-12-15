@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     std::string molecule_name = argv[1];
 
     // parse the config file
-    fs::path config_file_path = fs::path("sample_input/hw_5_2/" + molecule_name + ".json");
+    fs::path config_file_path = fs::path("sample_input/molecules/" + molecule_name + ".json");
     if (!fs::exists(config_file_path))
     {
         std::cerr << "Config file not found: " << config_file_path << std::endl;
