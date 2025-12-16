@@ -19,7 +19,7 @@ using std::ifstream;
 
 
 /*
-    Note: Due to Lack of Detail Instructions The Code Below Was Written With Extension AI Guidance
+    Note: Due to a Lack of Detailed Instructions, The Code Below Was Written With Extension AI Guidance
     and Debugged Using ChatGPT.
  */
 
@@ -232,7 +232,8 @@ arma::vec HessianBuilder::compute_frequencies(const arma::vec& eigvals){
 
 
 
-/* While All Code Was Guided By AI The Function Below Was Directly Copied and Pasted From ChatGPT*/
+/* While All Code In This File Was Guided By AI, The Function Below Was Directly Copied and Pasted From ChatGPT*/
+
 void HessianBuilder::write_mode_xyz(const arma::mat& cart_modes,
                                     int mode_index,
                                     int n_frames,
