@@ -18,6 +18,14 @@ using std::ifstream;
 #include "normal_modes.hpp"
 
 
+/*
+    Note: Due to Lack of Detail Instructions The Code Below Was Written With Extension AI Guidance
+    and Debugged Using ChatGPT.
+ */
+
+
+
+
 HessianBuilder::HessianBuilder(CNDO& cndo_object)
     : cndo(cndo_object), 
       molecule(cndo_object.get_molecule())   
@@ -222,73 +230,9 @@ arma::vec HessianBuilder::compute_frequencies(const arma::vec& eigvals){
     return freqs;
 }
 
-// void HessianBuilder::write_mode_xyz(const arma::mat& cart_modes,
-//                                     int mode_index,
-//                                     int n_frames,
-//                                     double amplitude,
-//                                     const std::string& base_filename)
-// {
-//     const double bohr_to_ang = 0.529177;
-//     int num_atoms = molecule.atoms_of_molecule.size();
-//     int N3 = 3 * num_atoms;
 
-//     // Extract the mode vector (length 3N)
-//     arma::vec mode_vec = cart_modes.col(mode_index);
 
-//     // Convert current equilibrium geometry (bohr) to an arma::mat
-//     arma::mat geom = molecule.molecular_coordinates;  // (N x 3)
-
-//     for (int frame = 0; frame < n_frames; frame++)
-//     {
-//         double phase = (2.0 * M_PI * frame) / n_frames;
-//         double displacement_scale = amplitude * std::sin(phase);
-
-//         // Output filename: example: mode_5_frame_012.xyz
-//         std::ostringstream fname;
-//         fname << base_filename << "_mode_" << mode_index
-//               << "_frame_" << std::setw(3) << std::setfill('0') << frame
-//               << ".xyz";
-
-//         std::ofstream out(fname.str());
-//         if (!out.is_open()) {
-//             throw std::runtime_error("ERROR: Could not open XYZ output file.");
-//         }
-
-//         // --- XYZ HEADER ---
-//         out << num_atoms << "\n";
-//         out << "Mode " << mode_index
-//             << ", Frame " << frame
-//             << ", Amplitude = " << amplitude
-//             << "\n";
-
-//         // --- PRINT ATOMS ---
-//         for (int a = 0; a < num_atoms; a++)
-//         {
-//             double dx = displacement_scale * mode_vec(3*a + 0);
-//             double dy = displacement_scale * mode_vec(3*a + 1);
-//             double dz = displacement_scale * mode_vec(3*a + 2);
-
-//             double x = (geom(a,0) + dx) * bohr_to_ang;
-//             double y = (geom(a,1) + dy) * bohr_to_ang;
-//             double z = (geom(a,2) + dz) * bohr_to_ang;
-
-//             int Z = molecule.atoms_of_molecule[a].Z;
-
-//             // Avogadro expects element symbols.
-//             std::string symbol = symbol_from_Z(Z);
-
-//             out << symbol << "  "
-//                 << std::fixed << std::setprecision(6)
-//                 << x << "  " << y << "  " << z << "\n";
-//         }
-
-//         out.close();
-//     }
-
-//     std::cout << "Wrote animations for mode " << mode_index
-//               << " to files starting with: " << base_filename << "\n";
-// }
-
+/* While All Code Was Guided By AI The Function Below Was Directly Copied and Pasted From ChatGPT*/
 void HessianBuilder::write_mode_xyz(const arma::mat& cart_modes,
                                     int mode_index,
                                     int n_frames,
@@ -300,9 +244,9 @@ void HessianBuilder::write_mode_xyz(const arma::mat& cart_modes,
     int N3 = 3 * num_atoms;
 
     arma::vec mode_vec = cart_modes.col(mode_index);
-    arma::mat geom = molecule.molecular_coordinates;  // N x 3
+    arma::mat geom = molecule.molecular_coordinates;  
 
-    // Create ONE trajectory file:
+    
     std::ostringstream full_name;
     full_name << base_filename << "_mode_" << mode_index << ".xyz";
     std::ofstream out(full_name.str());
@@ -316,14 +260,14 @@ void HessianBuilder::write_mode_xyz(const arma::mat& cart_modes,
         double phase = (2.0 * M_PI * frame) / n_frames;
         double displacement_scale = amplitude * std::sin(phase);
 
-        // --- XYZ HEADER FOR THIS FRAME ---
+        
         out << num_atoms << "\n";
         out << "Mode " << mode_index
             << ", Frame " << frame
             << ", Amplitude = " << amplitude
             << "\n";
 
-        // --- PRINT ATOMS FOR THIS FRAME ---
+        
         for (int a = 0; a < num_atoms; a++)
         {
             double dx = displacement_scale * mode_vec(3*a + 0);
