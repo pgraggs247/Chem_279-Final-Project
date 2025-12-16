@@ -28,6 +28,7 @@ This project implements a complete workflow for molecular vibrational analysis a
 
 ### Core Components
 
+#### Note: Description Below Refers to Code on the Main Branch - Current Branch Contains Obsolete Code
 
 | File | Description |
 |------|-------------|
