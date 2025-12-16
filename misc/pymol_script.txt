@@ -1,0 +1,26 @@
+reinitialize
+hide everything
+set sphere_scale, 0.4
+set stick_radius, 0.35
+set connect_cutoff, 2.0
+bg_color white
+load sample_output/Normal_Modes/H2O/mode_animations/H2O_mode_7.pdb
+rebuild
+bond id 1, id 
+show spheres
+show sticks
+center
+count_states
+mset 1 -20
+frame 1
+mpng frame_, mode=2
+set ray_trace_frames, 1
+set ray_opaque_background, on
+set antialias, 2
+set ray_shadows, on
+set ray_trace_mode, 1
+set sphere_quality, 4
+set stick_quality, 16
+frame 1
+mpng frame_, mode=2
+mplay

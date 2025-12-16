@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a complete workflow for molecular vibrational analysis and visualization:
+This project implements a computational chemistry tool that calculates molecular vibrational frequencies using semi-empirical quantum mechanics (CNDO/2) and generates animations for visualizations through these major steps:
 
 1. **Geometry Optimization** - Optimizes molecular geometry via steepest descent with backtracking line search.
 2. **Mass-weighted Hessian calculation** - Calculates the mass-weighted Hessian matrix (force constants) using numerical differentiation of analytical force gradients.
@@ -35,7 +35,7 @@ This project implements a complete workflow for molecular vibrational analysis a
 | `hw4.cpp` | Implements CNDO/2 Self-Consistent Field (SCF) procedure including Fock matrix construction, density matrix calculation, and convergence checking |
 | `hw5.cpp` | Computes analytical gradients of electronic and nuclear repulsion energies; performs geometry optimization via steepest descent with adaptive step size |
 | `analyzer.cpp` | Calculates Hessian matrix via central finite differences; computes mass-weighted Hessian and solves eigenvalue problem for frequencies |
-| `writter.cpp` | Generates multi-frame PDB trajectory files for visualizing normal mode animations |
+| `writer.cpp` | Generates multi-frame PDB trajectory files for visualizing normal mode animations |
 
 
 ### Project Structure
@@ -50,16 +50,19 @@ Below is a directory tree to help navigate the codebase:
 └── src/             # Source code
 
 In addition, the repo contains:
-1. CHEM-279-FINAL-PROJECT.pptx: The group's final project powerpoint presentation.
+1. CHEM-279-Final-Project-Presentation.pptx/pdf: The group's final project powerpoint presentation
+2. CHEM-279-Final-Project-Report: The group's final project report
+3. misc: folder containing a PyMol macro script to automate & produce animations for molecular vibrations at a particular mode
 ```
 
 ## Building & Running the Project
 
 1. A pre-configured development environment is available; launch the interactive Docker container: `./interactive.sh`
 
-2. Inside the container, build the project: `./build.sh` (you might need to `chmod +x` to gain permission access). To remove the `build` subdirectory and output files to start fresh, run `./clean.sh`
+2. Inside the container, run `./clean.sh` to remove any build or output artefacts. To build the project, run `./build.sh`. 
+Note: you might need to `chmod +x` to gain permission access.
 
-3. To run the program, in the root directory, run `./run.sh <molecule_name>`. To execute all tested molecules at once, run `./run.sh`. 
+3. To run the program, in the root directory, run `./run.sh <molecule_name>`. In addition, to execute all tested molecules at once, run `./run.sh`. 
 
 4. The program will output results saved to `sample_output/Normal_Modes/<molecule>/`:
 
@@ -96,34 +99,9 @@ The normal modes have been created and saved to the directory: "sample_output/No
 
 
 ### PyMol
+1. In the repo, navigate to `misc` folder, and copy the entire multi-line commands in the `pymol_script.txt` file. 
 1. Open PyMol
-2. Run this multi-line commands in the PyMol command line
-```
-reinitialize
-hide everything
-set sphere_scale, 0.4
-set stick_radius, 0.35
-set connect_cutoff, 2.0
-bg_color white
-load sample_output/Normal_Modes/H2O/mode_animations/H2O_mode_7.pdb
-rebuild
-bond id 1, id 
-show spheres
-show sticks
-center
-count_states
-mset 1 -20
-frame 1
-mpng frame_, mode=2
-set ray_trace_frames, 1
-set ray_opaque_background, on
-set antialias, 2
-set ray_shadows, on
-set ray_trace_mode, 1
-set sphere_quality, 4
-set stick_quality, 16
-frame 1
-mpng frame_, mode=2
-mplay
-```
-`Note:` The animations for the test molecules were produced, and can be viewed in the final powerpoint presentation in this repo.
+2. In PyMol terminal, paste the command, and execute the macro. 
+The interface will display animations of molecular vibrations at a specific mode. To visualize other .pdb files, the user needs to point to different files which are located in `sample_output/Normal_Modes/<Molecule_name>/mode_animations`.
+
+`Note:` The animations for the test molecules were produced, and can be viewed in the `CHEM-279-Final-Project-Presentation.pptx` file in this repo.
