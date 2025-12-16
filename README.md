@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a computational chemistry tool that calculates molecular vibrational frequencies using semi-empirical quantum mechanics (CNDO/2) and generates animations for visualizations through these major steps:
+This project implements a computational chemistry tool that determines normal modes for different molecular systems, calculates vibrational frequencies using semi-empirical quantum mechanics (CNDO/2) and generates animations for visualizations through these major steps:
 
 1. **Geometry Optimization** - Optimizes molecular geometry via steepest descent with backtracking line search.
 2. **Mass-weighted Hessian calculation** - Calculates the mass-weighted Hessian matrix (force constants) using numerical differentiation of analytical force gradients.
