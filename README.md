@@ -35,7 +35,7 @@ This project implements a computational chemistry tool that determines normal mo
 | `hw4.cpp` | Implements CNDO/2 Self-Consistent Field (SCF) procedure including Fock matrix construction, density matrix calculation, and convergence checking |
 | `hw5.cpp` | Computes analytical gradients of electronic and nuclear repulsion energies; performs geometry optimization via steepest descent with adaptive step size |
 | `analyzer.cpp` | Calculates Hessian matrix via central finite differences; computes mass-weighted Hessian and solves eigenvalue problem for frequencies |
-| `writer.cpp` | Generates multi-frame PDB trajectory files for visualizing normal mode animations |
+| `writter.cpp` | Generates multi-frame PDB trajectory files for visualizing normal mode animations |
 
 
 ### Project Structure
